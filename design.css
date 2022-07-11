@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("imges/tri.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    padding: 0.6% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block; 
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none; 
+    font-size: 13px ;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FAED26;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.intro{
+    width: 99%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+h1{
+    font-size: 62px;
+    color: #FF652F;
+    font: small-caps bold 62px/1 sans-serif; 
+}
+
+p1{
+    margin: 20px 0 40px;
+    font-size: 25px;
+    color: #FFF;
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+nav .fas{
+    display: none;
+}
+@media(max-width: 700px){
+    .intro h1{
+    font-size: 20px;
+    }
+    .nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: absolute;
+    background: #4056A1;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+nav .fas{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.nav-links{
+    padding: 30px;
+}
+}
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.h2{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+.p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.pp1{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.pp1:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.images{
+    flex-basis: 32%;
+    border-radius : 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    top: 100%;
+    left: 60%;
+}
+.images img {
+    width: 100%;
+}
+.images{
+    font-size: 25px;
+    color: #FF652F;
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("https://wallpapercave.com/wp/wp6944797.png"); ;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+    color: #FFE400;
+    font: italic small-caps bold 62px/2 cursive;
+}
+.camera{
+   width: 99%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons {
+    color: #f44336;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.body{
+  background-color: #ede5dc;
+  
+}
+.jumbotron-fluid {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("imges/t3.png"); ;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.display-4{
+    margin-top: 100px;
+    color: #FFE400;
+    font: italic small-caps bold 62px/2 cursive;
+}
+.lead{
+    color: #fff;
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+.container{
+  background-color: transperent;
+  
+}
+.card{
+  margin-top:30px;
+  padding:10px;
+  box-shadow: 0 4px 4px 0 #b6bfc4;
+  border-radius: 15px;
+  length:78%;
+  width:50%;
+  margin-left:250px;
+  margin-right:100px;
+  transition: 0.2;
+  margin-bottom: 10px;
+  
+}
+h3{
+  font-family: 'Source Serif Pro', serif;
+  text-align:center;
+  font-size:25px;
+}
+img{
+  width:30%;
+  length:10%;
+  margin-left: auto;
+  margin-right: auto;
+  padding:8px;
+}
